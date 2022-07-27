@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/3c40e6ebff.js" crossorigin="anonymous"></script> 
+    <title>Furniture website</title>
+</head>
+<body>
+         <header>
+             <div class="logo" >
+                 <img src="./img/logo.png" alt="">
+                 <h1>pheo<span>niX</span></h1>
+             </div>
+             <nav class="nav" id="nav">
+                 <a data-aos="fade-up"  data-aos-delay="200" href="/" class="active">home</a>
+                 <a data-aos="fade-up" data-aos-delay="200" href="/">about</a>
+                 <a data-aos="fade-up" data-aos-delay="200" href="/">products</a>
+                 <a data-aos="fade-up" data-aos-delay="200" href="/">services</a>
+                 <a data-aos="fade-up" data-aos-delay="200" href="/">deliveries</a>
+                 <a data-aos="fade-up" data-aos-delay="200" href="/">contact</a>
+                </nav>
+                <div class="right">
+                    <button data-aos="fade-up"  data-aos-delay="200">sign in</button>
+                    <button data-aos="fade-up"  data-aos-delay="250">sign up</button>
+                </div>
+                <i id="nav-toggler" onclick={TogglerFun()} class="fa-solid fa-bars-staggered"></i>
+         </header>
+
+        <div class="home-1">
+            <div class="left">
+                 <h1 data-aos="fade-up">We help you make modern <span>interior</span></h1>
+                 <p data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, ipsam voluptates quam repudiandae corporis sapiente dicta maiores sint commodi maxime?</p>
+                 <div class="buttons">
+                    <button data-aos="fade-up" data-aos-delay="250">get started</button>
+                    <button data-aos="fade-up" data-aos-delay="300">live demo</button>
+                 </div>
+            </div>
+            <div class="right">
+                <img data-aos="fade-up" src="./img/img1.jpg" alt="">
+             </div>
+        </div>
+        <div class="home-2">
+             <div class="item" data-aos="fade-up">
+                <i class="fa-solid fa-truck"></i>
+                <div class="inner">
+                    <h2>fast delivery</h2>
+                    <p>orders over $100</p>
+                </div>
+             </div>
+             <div class="item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-gift"></i>
+                <div class="inner">
+                    <h2>smart gift card</h2>
+                    <p>buy over $100 to get one</p>
+                </div>
+             </div>
+             <div class="item" data-aos="fade-up" data-aos-delay="250">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="inner">
+                    <h2>quick payment</h2>
+                    <p>100% secure payments</p>
+                </div>
+             </div>
+             <div class="item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-solid fa-headset"></i>
+                <div class="inner">
+                    <h2>24/7 support</h2>
+                    <p>quick support</p>
+                </div>
+             </div>
+        </div>
+        <div class="about">
+           <div class="left">
+            <h1 data-aos="fade-up">about <span>us</span></h1>
+            <p data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eligendi pariatur, laboriosam libero fugiat id dolore, ipsam sunt sed nam velit, repudiandae impedit quo aliquid?</p>
+           </div>
+           <div class="middle">
+             <img data-aos="fade-up" data-aos-delay="250" src="./img/person.jpg" alt="">
+           </div>
+           <div class="right">
+            <h2 data-aos="fade-up" data-aos-delay="300">javid randhir</h2>
+            <p data-aos="fade-up" data-aos-delay="320">founter & ceo</p>
+            <p data-aos="fade-up" data-aos-delay="340">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex earum consequatur dolor corporis id veniam natus. Consectetur, iure.</p>
+            <div class="icons" >
+                <i data-aos="fade-up" data-aos-delay="350" class="fa-brands fa-facebook-f"></i>
+                <i data-aos="fade-up" data-aos-delay="360" class="fa-brands fa-instagram"></i>
+                <i data-aos="fade-up" data-aos-delay="370" class="fa-brands fa-twitter"></i>
+            </div>
+           </div>
+
+        </div>
+        <div class="modern">
+            <h1 data-aos="fade-up">modern furniture <span>collections</span></h1>
+            <div class="collection">
+                <div class="left" data-aos="fade-up">
+                    <img src="./img/sofa3.jpg" alt="">
+                </div>
+                <div class="right">
+                    <img data-aos="fade-up" data-aos-delay="200" src="./img/sofa1.jpg" alt="">
+                    <img data-aos="fade-up" data-aos-delay="200" src="./img/sofa4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="chairs">
+            <div class="item" data-aos="fade-up">
+                <img src="./img/chair6.png" alt="">
+                <h5>chair 10</h5>
+                <p>$20</p>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-delay="200">
+                <img src="./img/chair1.png" alt="">
+                <h5>chair 1</h5>
+                <p>$20</p>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-delay="250">
+                <img src="./img/chair2.png" alt="">
+                <h5>chair 2</h5>
+                <p>$50</p>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-delay="300">
+                <img src="./img/chair3.png" alt="">
+                <h5>chair 3</h5>
+                <p>$30</p>
+            </div>
+            
+        </div>
+        <div class="chair-collection" id="chairs-container">
+            <h1 style="text-align: center;color:#d21404">Browse our collections</h1>
+          <div class="inner">
+            <div class="item" data-aos="fade-up">
+                <img src="./img/chair1.png" alt="">
+                <h3>chair 1</h3>
+                <p>$ 135</p>
+           </div>
+           <div class="item" data-aos="fade-up" data-aos-delay="200">
+                <img src="./img/chair2.png" alt="">
+                <h3>chair 2</h3>
+                <p>$ 165</p>
+           </div>
+           <div class="item" data-aos="fade-up" data-aos-delay="250">
+                <img src="./img/chair3.png" alt="">
+                <h3>chair 3</h3>
+                <p>$ 195</p>
+           </div>
+           <div class="item" data-aos="fade-up" data-aos-delay="300">
+                <img src="./img/chair4.png" alt="">
+                <h3>chair 4</h3>
+                <p>$ 355</p>
+           </div>
+           <div class="item" data-aos="fade-up" >
+                <img src="./img/chair5.png" alt="">
+                <h3>chair 5</h3>
+                <p>$ 455</p>
+           </div>
+           <div class="item" data-aos="fade-up" data-aos-delay="200">
+                <img src="./img/chair6.png" alt="">
+                <h3>chair 6</h3>
+                <p>$ 485</p>
+           </div>
+           <div class="item" data-aos="fade-up" data-aos-delay="250">
+                <img src="./img/chair7.png" alt="">
+                <h3>chair 7</h3>
+                <p>$ 505</p>
+           </div>
+           <div class="item" data-aos="fade-up" data-aos-delay="300">
+                <img src="./img/chair8.png" alt="">
+                <h3>chair 8</h3>
+                <p>$ 765</p>
+           </div>
+          </div>
+        </div>
+        <div class="footer-top" 
+        data-aos-anchor-placement="center-bottom">
+            <h1 data-aos="fade-up">subscribe for more</h1>
+            <input data-aos="fade-up" data-aos-delay="200" type="text" placeholder="Your Email">
+            <button data-aos="fade-up" data-aos-delay="300">subscribe</button>
+        </div>
+        <footer>
+            <div class="left" data-aos="fade-up">
+                <img  src="./img/logo.png" alt="">
+                <h1>pheo<span>nix</span></h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga blanditiis quibusdam suscipit magni.</p>
+            </div>
+            <div class="middle" data-aos="fade-down">
+                 <h2>Products</h2>
+                 <h5>chairs</h5>
+                 <h5>sofas</h5>
+                 <h5>beds</h5>
+                 <h5>cots</h5>
+                 <h5>furnitures</h5>
+            </div>
+            <div class="middle" data-aos="fade-up">
+                 <h2>services</h2>
+                 <h5>delivery</h5>
+                 <h5>service1</h5>
+                 <h5>service2</h5>
+                 <h5>service3</h5>
+                 <h5>service4</h5>
+            </div>
+            <div class="right" data-aos="fade-down">
+                <h2>resources</h2>
+                <h5>pricing</h5>
+                <h5>support</h5>
+                <h5>online</h5>
+                <h5>shopping</h5>
+                <h5>advicery</h5>
+            </div>
+        </footer>
+        <script>
+            AOS.init({  delay: 100,  offset: 120, });
+          </script>
+          <script>
+            const navToggler=document.getElementById('nav-toggler')
+            const Navbar=document.getElementById('nav')
+            const TogglerFun=()=>{
+                Navbar.classList.toggle('active')
+            }
+          </script>
+</body>
+</html>

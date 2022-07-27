@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&family=Merienda:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+}
+body{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+header .logo > h1{
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+header .logo > h1 span{
+    color: #d21404;
+}
+header .logo img{
+    max-width: 80px;
+}
+header nav a{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    padding: 0 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+header nav .active{
+    color: #d21504df;
+    position: relative;
+}
+header nav .active::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d21404;
+}
+header nav a:hover{
+    color: #d21404;
+}
+header .right button{
+    background: transparent;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin: 0 8px;
+    padding: 6px 20px;
+    outline: none;
+    border: 1.2px solid transparent;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+header .right button:nth-of-type(1):hover{
+    background-color: #d21504dc;
+    color: #fff;
+}
+header .right button:nth-of-type(2){
+    background-color: #d21504dc;
+    color: #fff;
+    font-weight: 500;
+}
+header .right button:nth-of-type(2):hover{
+    background: transparent;
+    color: #d21504dc;
+    border: 1.2px solid #d21504dc;
+}
+
+/* home-1 */
+.home-1{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.home-1 .left{
+    flex: 1;
+    position: relative;
+    padding-left: 10%;
+}
+.home-1 .left > h1{
+    font-size: 4rem;
+    width: 70%;
+    text-transform: capitalize;
+}
+.home-1 .left > h1 span{
+    color: #d21504cb;
+    font-size: 4.7rem;
+}
+.home-1 .left > p{
+    font-size: 1.1rem;
+    color: gray;
+    word-break: break-all;
+    width: 90%;
+}
+.home-1 .left button{
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    padding: 8px 20px;
+    margin: 12px 5px;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.home-1 .left button:nth-of-type(1){
+    background-color: #d21504dc;
+    color: #fff;
+}
+.home-1 .right{
+    flex: 1;
+}
+.home-1 .right img{
+    position: relative;
+    width: 100%;
+}
+
+/* home-2 */
+.home-2{
+    position: relative;
+    width: 87%;
+    margin: 10vh auto 4vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-2 .item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    margin: 15px 0;
+    justify-content: center;
+}
+.home-2 .item i{
+    font-size: 2.6rem;
+    margin-right: 10px;
+    color: #d21504cf;
+}
+.home-2 .item .inner h2{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.home-2 .item .inner p{
+    font-size: .9rem;
+}
+/* about */
+.about{
+    position: relative;
+    width: 85%;
+    margin: 11vh auto 4vh;
+    display: flex;
+}
+
+
+.about .left{
+    flex: 1.2;
+}
+.about .middle{
+    flex: 1;
+    margin: 0 10px;
+}
+.about .right{
+    flex: 1.3;
+}
+.about .left h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.about .left h1 span{
+    color: #d21504cf;
+}
+.about .left p{
+    font-size: 1rem;
+    color: gray;
+}
+.about .middle img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.about .right{
+    padding-left: 20px;
+}
+.about .right p,
+.about .right h2{
+    text-transform: capitalize;
+}
+.about .right p{
+margin-bottom: 15px;
+color: gray;
+}
+.about .right .icons i{
+    font-size: 1.1rem;
+    margin: 5px 10px;
+    color: #d21504cf;
+}
+
+/* modern */
+.modern{
+    position: relative;
+    width: 85%;
+    overflow: hidden;
+    margin: 10vh auto 4vh;
+}
+.modern > h1{
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    width: 50%;
+}
+.modern > h1 span{
+    color: #d21504cf;
+}
+.modern .collection{
+    display: flex;
+}
+.modern .collection .right{
+    flex: 1;
+}
+.modern .collection .left{
+    flex: 1.4;
+}
+.modern .collection .left img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modern .collection .right{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    flex-direction: column;
+}
+.modern .collection .right img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+/* chairs */
+.chairs{
+    position: relative;
+    width: 90%;
+    margin: 2vh auto 5vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-content: center;
+    justify-content: center;
+}
+.chairs .item{
+    text-align: center;
+}
+.chairs img{
+    height: 350px;
+}
+
+.chairs .item h5{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.chairs .item p{
+    color: #d21504dd;
+    font-weight: 700;
+}
+
+/* footer */
+footer{
+    position: relative;
+    display: flex;
+    padding: 40px 20px;
+}
+footer .left{
+    flex: 1.4;
+    margin: 0 15px;
+    text-align: center;
+}
+footer .right,
+footer .middle{
+    flex: 1;
+}
+footer .left img{
+    max-width: 150px;
+}
+footer .left h1{
+    position: relative;
+}
+
+footer .right,
+footer .middle{
+    margin-left: 20px;
+}
+footer .right h2,
+footer .middle h2{
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+footer .right h5,
+footer .middle h5{
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 7px 0;
+    text-transform: capitalize;
+    color: gray;
+}
+/* footer-top */
+.footer-top{
+    position: relative;
+    width: 100vw;
+    padding: 5vh ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('./img/Cool\ Red\ Background.jpg');
+}
+.footer-top h1{
+    color: #fff;
+    text-transform: capitalize;
+    margin: 15px;
+}
+.footer-top input{
+    width: 50%;
+    outline: none;
+    border: none;
+    background-color: rgba(240, 248, 255, 0.523);
+    height: 50px;
+    color: #fff;
+    padding: 4px 10px;
+    box-shadow: 0 0 2px #fff;
+}
+.footer-top input::placeholder{
+    color: #fff;
+    /* text-align: center; */
+    /* font-size: 1.rem; */
+}
+.footer-top button{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    border: 1.2px solid #fff;
+    box-shadow: 0 0 2px #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 6px 20px;
+}
+/* chair-collection */
+.chair-collection .inner{
+    position: relative;
+    width: 95%;
+    padding: 20px 30px;
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.9)),url('./img/gradientImage.png');
+    margin: 2vh auto 15vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+.chair-collection .item{
+    text-align: center;
+    cursor: pointer;
+}
+.chair-collection .item h3{
+    color: #d21404;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.chair-collection .item p{
+    color: green;
+    font-weight: 600;
+}
+.chair-collection .item img{
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+/* nav */
+
+#nav-toggler{
+    font-size: 1.4rem;
+    margin: 0 10px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+@media screen and (max-width:1200px){
+    .home-1 .left > h1{
+        font-size: 2.8rem;
+    }
+    .home-1 .left > h1 span{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:1000px){
+    .chairs{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .chair-collection .inner{
+        grid-template-columns: repeat(3,1fr);
+    }
+    header .right button:nth-of-type(1){
+        display: none;
+    }
+}
+@media screen and (max-width:800px){
+    .home-1{
+        flex-direction: column;
+    }
+    #nav-toggler{
+        display: block;
+    }
+    .home-1 .right{
+        order: -1;
+    }
+    .about{
+        width: 98%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .middle,
+    .about .left{
+        margin-bottom: 20px;
+    }
+    .chair-collection .inner{
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer .left{
+        text-align: left;
+    }
+    .modern .collection{
+        flex-direction: column;
+    }
+    nav{
+        position: absolute;
+        top: 80px;
+        width: 100vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
+        color: #fff;
+        flex-direction: column;
+        height: 0;
+        transition: all 1s ease;
+        background-color: #d21504d2;
+        z-index: 1000;
+    }
+
+    .nav a{
+        color: #fff;
+        margin: 12px 0;
+    }
+    .nav a.active{
+        color: #fff;
+        padding-bottom: 10px;
+    }
+    header nav .active::before{
+        width: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: aliceblue;
+    }
+
+    nav.active{
+        height: 400px;
+        transition: all 1s ease;
+        /* animation: animateHeight 2s ease; */
+    }
+    @keyframes animateHeight{
+        0%{height: 0;}
+        100%{height: auto;}
+    }
+}
+@media screen and (max-width:550px){
+    .chairs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .chair-collection .inner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .home-1 .left > h1{
+        width: 90%;
+    }
+    .home-2{display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-start;
+        margin-left: 50px;
+    }
+    .home-2 .item{
+        margin: 22px 0;
+        min-width: 0;
+    }
+}
